@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tienda de Ropa</title>
+  <style>
+    /* Estilo general */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #34495e;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Estilos para las secciones de productos */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+
+    .product:hover img {
+      opacity: 0.85;
+    }
+
+    .product h2 {
+      font-size: 1.3em;
+      margin: 15px 0;
+    }
+
+    .product p {
+      color: #777;
+      font-size: 0.95em;
+      margin: 10px 0;
+    }
+
+    .product .price {
+      font-size: 1.5em;
+      color: #e74c3c;
+      margin: 10px 0;
+    }
+
+    .product .button {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1em;
+      margin-bottom: 15px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product .button:hover {
+      background-color: #16a085;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Tienda de Ropa</h1>
+    <p>Vístete con estilo, cada día.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Novedades</a>
+    <a href="#">Hombres</a>
+    <a href="#">Mujeres</a>
+    <a href="#">Niños</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <!-- Productos -->
+  <div class="products">
+    <div class="product">
+      <img src="camisa ca.webp" alt="Camiseta">
+      <h2>Camiseta Casual</h2>
+      <p>Comodidad y estilo para el día a día.</p>
+      <div class="price">$29.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="chaqueta.jpg" alt="Chaqueta de Invierno">
+      <h2>Chaqueta de Invierno</h2>
+      <p>Ideal para climas fríos, con un toque de elegancia.</p>
+      <div class="price">$69.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="vaqueros.jpg" alt="Pantalones Vaqueros">
+      <h2>Pantalones Vaqueros</h2>
+      <p>Un clásico cómodo y versátil.</p>
+      <div class="price">$39.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="depor.jpg" alt="Zapatos Deportivos">
+      <h2>Zapatos Deportivos</h2>
+      <p>Comodidad y estilo para todo tipo de actividades.</p>
+      <div class="price">$49.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="vesti.webp" alt="Vestido de Noche">
+      <h2>Vestido de Noche</h2>
+      <p>Perfecto para eventos especiales.</p>
+      <div class="price">$89.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="sudadera.jpeg" alt="Sudadera con Capucha">
+      <h2>Sudadera con Capucha</h2>
+      <p>Práctica, cómoda y a la moda.</p>
+      <div class="price">$39.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="sombrero.jpg" alt="Sombrero de Paja">
+      <h2>Sombrero de Paja</h2>
+      <p>Accesorio perfecto para el verano.</p>
+      <div class="price">$19.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="camisa formal.webp" alt="Camisa Formal">
+      <h2>Camisa Formal</h2>
+      <p>Elige elegancia para tu día de oficina.</p>
+      <div class="price">$45.99</div>
+      <button class="button">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 ottos store.</p>
+  </footer>
+
+</body>
+</html>
